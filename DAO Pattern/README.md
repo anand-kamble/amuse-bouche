@@ -3,6 +3,8 @@
 _Hatched at Liebre.ai—less boilerplate, more signal._
 
 
+[View on Medium](https://medium.com/@anand-kamble/simplify-your-sqlalchemy-a-guide-to-the-dao-pattern-9f49ad8b2d82)
+
 ## Introduction: The ORM Paradox – A Deal with the Devil?
 
 Object-Relational Mappers (ORMs) promise a better way to work with databases. They let you manipulate data using Python objects instead of raw SQL queries. **SQLAlchemy** sits at the top of the Python ORM world—it's incredibly powerful, endlessly flexible, and can handle just about any database scenario you throw at it.
@@ -39,7 +41,7 @@ That last state is where **`DetachedInstanceError`** comes from—SQLAlchemy's m
 
 This isn't a bug—it's a fundamental design tension. SQLAlchemy's power comes from its stateful "unit of work" pattern, but this clashes with the stateless nature of modern web applications.
 
-![Not bad. But not good.](https://media1.tenor.com/m/V0CT3rf7s-4AAAAd/not-bad-not-good.gif)
+![Not bad. But not good.](./not-bad-not-good.gif)
 
 **A DAO bridges this gap**, ensuring objects are always fully loaded and usable when returned to your application code.
 
