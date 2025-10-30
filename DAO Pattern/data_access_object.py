@@ -26,8 +26,8 @@ from typing import (
 
 from sqlalchemy.orm import Session
 
-from database.psql_connection import PostgresConnection
-from utils.logger import Logger
+from psql_connection import PostgresConnection
+from utils.logger import Logger # Use you logger this is only a placeholder.
 
 #: Type variable for the SQLAlchemy model class.
 ModelT = TypeVar("ModelT")
